@@ -23,7 +23,7 @@ fn half_adder(a: u8, b: u8) -> (Sum, Carry) {
 fn one_bit_adder() {
     for (inn, out) in half_adder_input_output() {
         let (a, b) = inn;
-        println!("Testing: {}, {} -> {}, {}", a, b, out.0, out.1);
+        println("Testing: {}, {} -> {}, {}", a, b, out.0, out.1);
         assert_eq!(half_adder(a, b), out);
     }
 }
